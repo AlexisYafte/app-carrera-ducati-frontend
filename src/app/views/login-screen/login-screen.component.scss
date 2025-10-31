@@ -1,0 +1,152 @@
+/* =======================
+   Mobile-first login page
+   ======================= */
+
+/* General layout */
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 1.5rem;
+  color: #111;
+}
+
+/* Main container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo and image section */
+.login-logo-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo-images {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-logo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+/* Form section */
+.login-form-section {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2.5rem 1.8rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.login-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs */
+.form-group {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  padding: 0.9rem 3rem;
+  border: 1.5px solid #000;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #c20000;
+}
+
+/* Show password icon */
+.show-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+}
+
+/* Links */
+.form-links {
+  text-align: left;
+  margin-top: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-links a {
+  font-size: 0.85rem;
+  color: #c20000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Button */
+.login-button {
+  width: 100%;
+  background-color: #c20000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #a00000;
+}
+
+/* Register link */
+.form-register {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-register a {
+  color: #c20000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Decorative bottom image */
+.login-logo-images:last-child img {
+  max-width: 100px;
+  margin-top: 1.2rem;
+}
+
+/* ======================
+   Responsive adjustments
+   ====================== */
+@media (min-width: 768px) {
+  .login-container {
+    max-width: 480px;
+  }
+
+  .login-title {
+    font-size: 1.3rem;
+  }
+}

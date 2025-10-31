@@ -1,0 +1,54 @@
+<section class="login-screen">
+  <div class="login-container">
+    <div class="login-logo-container">
+      <div class="login-logo-images">
+        <img src="../../../assets/images/logo-marcas.png" alt="Marcas Logo" class="login-logo">
+      </div>
+
+      <div class="login-logo-images">
+        <img src="../../../assets/images/login-img.png" alt="Login Image" class="login-logo">
+      </div>
+
+      <div class="login-form-section">
+        <h2 class="login-title">INICIO DE SESION</h2>
+        <form (ngSubmit)="login()" class="login-form">
+          <div class="form-group">
+            <input
+              type="email"
+              name="username"
+              class="form-control"
+              id="email"
+              placeholder="Correo electrónico"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              id="password"
+              placeholder="Contraseña"
+              autocomplete="current-password"
+              required
+            />
+            <span class="show-password" (click)="showPassword()" style="position:absolute; right:18px; top:50%; transform:translateY(-50%);">
+                <i [ngClass]="type == 'password' ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill'"></i>
+              </span>
+          </div>
+          <div class="form-links">
+            <a href="#">Recuperar contraseña</a>
+          </div>
+          <button type="submit" class="btn btn-primary login-button">INGRESAR</button>
+          <div class="form-register">
+            ¿Aún no tienes cuenta? <a href="#">Regístrate</a>
+          </div>
+        </form>
+      </div>
+      <div class="login-logo-images">
+        <img src="../../../assets/images/liston-img.png" alt="liston-img" class="login-logo">
+      </div>
+    </div>
+  </div>
+</section>
