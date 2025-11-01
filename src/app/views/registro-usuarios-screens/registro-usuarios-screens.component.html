@@ -1,1 +1,69 @@
-<p>registro-usuarios-screens works!</p>
+<section class="login-screen">
+  <div class="login-container">
+    <div class="login-logo-container">
+      <div class="login-logo-images">
+        <img src="../../../assets/images/logo-marcas.png" alt="Marcas Logo" class="login-logo">
+      </div>
+
+      <div class="login-logo-images">
+        <img src="../../../assets/images/login-img.png" alt="Login Image" class="login-logo">
+      </div>
+
+      <div class="login-form-section">
+          <h2 class="login-title">REGISTRATE</h2>
+          <mat-form-field class="mat-input" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput [(ngModel)]="user.first_name" placeholder="Nombre" (keypress)="soloLetras($event)">
+          </mat-form-field>
+
+          <mat-form-field class="mat-input" appearance="outline">
+            <mat-label>Apellidos</mat-label>
+            <input matInput [(ngModel)]="user.last_name" placeholder="Apellidos" (keypress)="soloLetras($event)">
+          </mat-form-field>
+
+          <mat-form-field class="mat-input" appearance="outline">
+          <mat-label>Correo electrónico</mat-label>
+          <input matInput [(ngModel)]="user.email" placeholder="Escribe correo electrónico">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="outline">
+          <mat-label>Contraseña</mat-label>
+          <input matInput [(ngModel)]="user.password" type="{{ inputType_1 }}" placeholder="Escribe contraseña">
+          <mat-icon matSuffix class="eye-icon" (click)="showPassword()">{{hide_1 ? 'visibility_off' :
+            'visibility'}}</mat-icon>
+          </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="outline">
+          <mat-label>Teléfono</mat-label>
+          <input matInput [(ngModel)]="user.telefono" mask='(000) 000-0000' placeholder="Escribe teléfono">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="outline">
+          <mat-label>Ciudad</mat-label>
+          <input matInput [(ngModel)]="user.ciudad" mask='00' placeholder="Ciudad">
+        </mat-form-field>
+
+        <mat-form-field class="mat-input" appearance="outline">
+          <mat-label>Edad</mat-label>
+          <input matInput [(ngModel)]="user.edad" mask='00' placeholder="Escribe la edad">
+        </mat-form-field>
+
+        <mat-checkbox class="form-links" color="primary" required>
+          Acepto los <a href="#" target="_blank" class="terminos-link">Términos y Condiciones</a>
+        </mat-checkbox>
+
+        <div class="section-buttons">
+          <button *ngIf="!editar" class="btn btn-primary" type="submit">Registrar</button>
+        </div>
+      </div>
+
+      <div class="form-links">
+            ¿Ya tienes una cuenta? <a href="#">Inicia sesión</a>
+      </div>
+
+      <div class="login-logo-images">
+        <img src="../../../assets/images/liston-img.png" alt="liston-img" class="login-logo">
+      </div>
+    </div>
+  </div>
+</section>

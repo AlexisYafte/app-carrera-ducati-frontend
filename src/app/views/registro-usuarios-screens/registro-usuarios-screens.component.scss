@@ -1,0 +1,158 @@
+/* ======== CONTENEDOR GENERAL ======== */
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px 25px;
+}
+
+/* ======== LOGOS ======== */
+.login-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo-images img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* ======== FORMULARIO ======== */
+.login-form-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.login-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+/* ======== CAMPOS DE FORMULARIO ======== */
+.mat-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+  font-size: 0.9rem !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  border-radius: 4px !important;
+}
+
+/* ======== CHECKBOX DE TÉRMINOS ======== */
+mat-checkbox {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+::ng-deep .mat-mdc-checkbox .mdc-form-field label {
+  display: flex;
+  align-items: center;
+  color: #000 !important;
+}
+
+.terminos-link {
+  color: #b71c1c;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.terminos-link:hover {
+  text-decoration: underline;
+}
+
+/* Personaliza el cuadro del checkbox */
+::ng-deep .mat-mdc-checkbox .mdc-checkbox__background {
+  border-color: #000 !important;
+  background-color: #000 !important;
+}
+
+/* Palomita blanca */
+::ng-deep .mat-mdc-checkbox.mat-mdc-checkbox-checked .mdc-checkbox__checkmark-path {
+  stroke: #fff !important;
+}
+
+/* ======== BOTÓN REGISTRAR ======== */
+.section-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #b71c1c;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #900d0d;
+}
+
+/* ======== LINK DE INICIO DE SESIÓN ======== */
+.form-links {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 10px;
+}
+
+.form-links a {
+  color: #b71c1c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+/* ======== LÍNEA SEPARADORA FINAL ======== */
+.login-container::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px auto 0 auto;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 400px) {
+  .login-container {
+    width: 90%;
+  }
+}
